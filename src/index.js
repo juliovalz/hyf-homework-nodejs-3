@@ -5,9 +5,16 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-app.get('/users', function (req, res) {
-  res.json({});
-});
+const user=[]
+
+
+
+app.get('/users', function(req,res){
+ 	res.json(
+ 	 user
+)
+})
+
 
 
 app.listen(3000,function(){
