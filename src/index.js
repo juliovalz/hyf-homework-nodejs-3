@@ -41,6 +41,16 @@ app.get('/users', function(req,res){
 )
 })
 
+app.delete('/user/:id', function(req,res){
+	if(user == ""){	
+		res.status(204).send()
+	}else{
+	user = [];
+	res.status(202).send();
+	}
+    
+})
+
 
 
 app.listen(3000,function(){
